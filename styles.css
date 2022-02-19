@@ -4,34 +4,43 @@ body {
     font-weight: 500;
     font-size: 16px;
     background-color: hsl(225, 100%, 94%);
+    --radius: 15px;
 }
 
 .container {
-    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 20rem;
-    text-align: center;
-    background-color: white;
-    border-radius: 15px;
-    position: absolute;
-    margin: 4% 35%;
+    margin: 3% 35%;
 }
 
-.content {
-    margin: 9%;
+main {
+    border-radius: 0 0 5% 5%;
+    text-align: center;
+    background-color: white;
+    /* border-radius: 15px; */
+    /* margin: 5%; */
+    width: inherit;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    padding-bottom: 10%;
 }
+
 
 h1 {
     font-size: 24px;
     font-weight: 700;
 }
 
-.container > p {
+main > p {
     font-weight: 500;
     font-size: 12px;
     color: rgb(175, 175, 175);
 }
 
-.content > p {
+main > p {
     color: rgb(175, 175, 175);
     font-size: 14px;
 }
@@ -47,8 +56,8 @@ a:hover {
 #hero {
     width: 100%;
     height: 75%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
 }
 
 p {
@@ -63,6 +72,7 @@ p {
     display: flex;
     flex-direction: row;
     padding-bottom: 4%;
+    margin: 0 8%;
 }
 
 #plan > svg {
@@ -101,7 +111,7 @@ p {
 #proceed {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin: 10% 8% 0 8%;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
@@ -117,7 +127,8 @@ p {
 }
 
 #pay:hover {
-    background-color: hsl(225, 100%, 98%);
+    color: white;
+    background-color: hsl(227, 78%, 67%);
 }
 
 #cancel {
@@ -147,8 +158,8 @@ a:hover {
 {
     body {
         background-image: url('images/pattern-background-desktop.svg');
-        background-size: cover;
-        background-position: 50% 20%;
+        /* background-size: cover; */
+        background-position: 50% -50%;
         background-repeat: no-repeat;
     }
 }
@@ -158,11 +169,20 @@ a:hover {
 {
     body {
         background-image: url('images/pattern-background-mobile.svg');
-        background-position: 50% 0;
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+        width: 100%;
     }
 
     .container {
-        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7% 5%;
+    }
+    
+    main {
+        flex-direction: column;
     }
 
     .attribution {
