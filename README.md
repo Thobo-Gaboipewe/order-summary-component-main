@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Thobo-Gaboipewe/order-summary-component-main](https://github.com/Thobo-Gaboipewe/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [order-summary-card](https://order-summary-card-t.netlify.app/)
 
 ## My process
 
