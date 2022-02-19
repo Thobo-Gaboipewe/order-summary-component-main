@@ -8,12 +8,12 @@ body {
 }
 
 .container {
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 20rem;
-    margin: 3% 35%;
+    margin: 7% 35%;
 }
 
 main {
